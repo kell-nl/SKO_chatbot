@@ -1,0 +1,45 @@
+#nextslide{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+html {
+    background: url(slide4bg.png) no-repeat center center fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+#kellInput {
+    background-color: #000000;
+    color: #FFFFFF;
+    font-size: 50px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+#reply {
+    color: #FFFFFF;
+    font-size: 50px;
+    position: flex;
+    align-items: center; /* center vertically */
+    justify-content: center; /* center horizontally */
+    height: 100%;
+    width: 100%;
+    margin: 100px;
+}
+
+#topic {
+    color: #FFFFFF;
+    font-size: 100px;
+    position: fixed;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

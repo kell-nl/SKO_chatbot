@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/slide4.css') }}">
+
+    <title>Slide 1</title>
+</head>
+<body>
+
+<button id="nextslide" onclick="location.href='http://127.0.0.1:5000/slide5'"">Next slide</button>
+
+<div class="text-box" id="topic">{{ topic }}</div>
+
+<form method="post" action="{{ url_for('input_text') }}">
+    <input type="text" name="text" placeholder="Enter text here" id="kellInput" autofocus="autofocus">
+<!--    <input type="submit" value="Submit"> -->
+</form>
+{% for line in text.split("\n") %}
+    <p>{{ line }}</p>
+{% endfor %}
+
+<!-- <div class="text-box" id="reply">{{ text }}</div> -->
+
+<div class="text-box" id="reply">{% for line in text.split("\n") %}
+    <p>{{ line }}</p>
+{% endfor %}</div>
+</body>
+</html>
