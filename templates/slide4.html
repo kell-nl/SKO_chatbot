@@ -16,14 +16,14 @@
     <input type="text" name="text" placeholder="Enter text here" id="kellInput" autofocus="autofocus">
 <!--    <input type="submit" value="Submit"> -->
 </form>
-{% for line in text.split("\n") %}
-    <p>{{ line }}</p>
-{% endfor %}
 
-<!-- <div class="text-box" id="reply">{{ text }}</div> -->
 
-<div class="text-box" id="reply">{% for line in text.split("\n") %}
+<div class="text-box" id="reply">{{ text }}</div>
+
+<!--
+<div class="text-box" id="reply">{{ text }}{% for line in text.split("\n") %}
     <p>{{ line }}</p>
 {% endfor %}</div>
+-->
 </body>
 </html>

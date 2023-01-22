@@ -5,8 +5,8 @@ import pyttsx3
 
 engine = pyttsx3.init()
 
-engine.say('whats up')
-engine.runAndWait()
+# engine.say('whats up')
+# engine.runAndWait()
 
 topic = ""
 
@@ -50,7 +50,8 @@ def slide3():
 
 @app.route("/slide4")
 def slide4():
-    return render_template("slide4.html")
+
+    return render_template("slide4.html", text='')
 
 
 @app.route("/input_text", methods=["POST"])
