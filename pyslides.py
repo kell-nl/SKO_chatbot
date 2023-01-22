@@ -4,9 +4,10 @@ from flask import Flask, render_template, request
 import pyttsx3
 
 engine = pyttsx3.init()
+engine.setProperty('rate',300)
 
-# engine.say('whats up')
-# engine.runAndWait()
+engine.say('whats up people')
+engine.runAndWait()
 
 topic = ""
 

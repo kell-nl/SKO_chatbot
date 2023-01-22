@@ -26,6 +26,8 @@ html {
 
 #reply {
     color: #FFFFFF;
+    word-wrap: break-word;
+    max-width: 1500px;
     font-size: 50px;
     position: flex;
     align-items: center; /* center vertically */
