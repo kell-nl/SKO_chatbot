@@ -17,13 +17,13 @@
 <!--    <input type="submit" value="Submit"> -->
 </form>
 
-
-<div class="text-box" id="reply">{{ text }}</div>
-
 <!--
-<div class="text-box" id="reply">{{ text }}{% for line in text.split("\n") %}
+<div class="text-box" id="reply">{{ text }}</div>
+-->
+
+<div class="text-box" id="reply">{% for line in text.split("\n") %}
     <p>{{ line }}</p>
 {% endfor %}</div>
--->
+
 </body>
 </html>
